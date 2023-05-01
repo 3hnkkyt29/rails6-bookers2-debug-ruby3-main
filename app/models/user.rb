@@ -27,8 +27,8 @@ class User < ApplicationRecord
   end
 
 # フォローフォロワー機能
-  def follow(user_id)
-    relationships.create(followed_id: user_id)
+  def follow(user)
+    relationships.create(followed_id: user)
   end
 
   def unfollow(user)
