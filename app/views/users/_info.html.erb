@@ -11,7 +11,9 @@
   <!--フォローフォロワー数入れた-->
   <tr>
   <th>follows</th>
-  <th><%= user.followings.count %></th>
+  <th>
+    <%#= user.followings.count %>
+  <p><%= link_to user.followings.count, user_following_path(user.id) %></p></th>
   </tr>
   <tr>
   <th>followers</th>
