@@ -13,7 +13,9 @@
       <main>
         <p id="notice"><%= notice %></p>
         <!--検索機能の部分テンプレート-->
+        <div class="mx-auto" style="width: 200px;">
         <%= render 'searches/search' %>
+        </div>
         <%= yield %>
       </main>
     <%= render 'layouts/footer' %>
