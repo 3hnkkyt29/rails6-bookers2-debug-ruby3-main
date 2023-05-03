@@ -1,7 +1,7 @@
 class SearchesController < ApplicationController
   before_action :authenticate_user!
   
-  def seach
+  def search
     @range = params[:range]
     @word = params[:word]
     if @range == "User"
